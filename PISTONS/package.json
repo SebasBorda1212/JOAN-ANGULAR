@@ -2,13 +2,16 @@
   "name": "pistons",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:PISTONS": "node dist/PISTONS/server/server.mjs"
-  },
+  "ng": "ng",
+  "start": "ng serve",
+  "build": "ng build",
+  "build:prod": "ng build --configuration production",
+  "watch": "ng build --watch --configuration development",
+  "test": "ng test",
+  "serve:ssr": "node dist/PISTONS/server/server.mjs",
+  "deploy": "ng build --configuration production --base-href=/PISTONS/ && npx angular-cli-ghpages --dir=dist/PISTONS/browser"
+}
+,
   "prettier": {
     "printWidth": 100,
     "singleQuote": true,
