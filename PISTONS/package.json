@@ -11,6 +11,7 @@
   "serve:ssr": "node dist/PISTONS/server/server.mjs",
   "deploy": "ng build --configuration production --base-href=/PISTONS/ && npx angular-cli-ghpages --dir=dist/PISTONS/browser"
 }
+
 ,
   "prettier": {
     "printWidth": 100,
